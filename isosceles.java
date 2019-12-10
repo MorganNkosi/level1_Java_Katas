@@ -1,17 +1,13 @@
-package com.company;
-import java.util.Scanner;
-
 public class isosceles {
 
     public static void main(String[] args) {
-        int num;
         System.out.println("Enter number :");
         Scanner input = new Scanner(System.in);
-        num = input.nextInt();
-        pyramid(num);
+        int  num = input.nextInt();
+        isosceles(num);
     }
 
-    public static void pyramid(int height) {
+    public static void isosceles(int height) {
         for (int i = 1; i <= height; i++) {
 
             for (int j = i; j<height; j++)
