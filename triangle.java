@@ -1,5 +1,3 @@
-package com.company;
-
 import java.util.Scanner;
 
 public class triangle {
@@ -8,8 +6,12 @@ public class triangle {
         System.out.println("Enter unit size");
 
         Scanner input = new Scanner(System.in);
-        int number = input.nextInt();
+        int unit = input.nextInt();
+        triangle(unit);
+    }
 
+    public static void triangle(int number)
+    {
         for (int i = 0; i <= number ; i++)
         {
             for (int j = 0; j < i ; j++)
@@ -18,5 +20,6 @@ public class triangle {
             }
             System.out.println("");
         }
+
     }
 }
