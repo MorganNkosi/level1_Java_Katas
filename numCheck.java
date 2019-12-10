@@ -6,7 +6,11 @@ public class numCheck {
         Scanner input = new Scanner(System.in);
         int number = input.nextInt();
 
+        evenOrOdd(number);
+    }
 
+    public static void evenOrOdd(int number)
+    {
         if(number % 2 == 0)
         {
             System.out.println("even");
@@ -15,6 +19,5 @@ public class numCheck {
         {
             System.out.println("odd");
         }
-
     }
 }
