@@ -1,14 +1,18 @@
-package com.example.java;
 import java.util.Scanner;
 
-public class Hello {
+public class hey {
+
     public static void main(String[] args) {
         System.out.println("Enter name");
         Scanner input = new Scanner(System.in);
         String name = input.nextLine();
-
-        System.out.println("Hello " + name);
+        hello(name);
 
     }
 
-}
+    public static void hello(String name)
+    {
+        System.out.println("Hello " + name + "!");
+    }
+
+
