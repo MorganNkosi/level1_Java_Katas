@@ -4,22 +4,29 @@ import java.util.Scanner;
 public class longest {
     public static void main(String[] args) {
 
-        System.out.println("Please enter the amount of strings you wish to display: ");
+        System.out.println("Please enter the number of strings:");
 
         Scanner input = new Scanner(System.in);
-        int amount = input.nextInt();
+        int unitSize = input.nextInt();
 
 
-        System.out.println("Please enter "+amount+ " Strings:");
+        System.out.println("Please enter " + unitSize + " Strings:");
 
         Scanner s = new Scanner(System.in);
-        String[] array = new String[amount];
+        String[] array = new String[unitSize];
 
 
         for (int i = 0; i < array.length; i++) {
             array[i] = s.nextLine();
         }
 
+        longest(array);
+
+
+    }
+
+    public static void longest(String array[])
+    {
         String longestString = array[0];
         for(int x=1; x<array.length; x++)
         {
@@ -35,9 +42,10 @@ public class longest {
                 System.out.println("Longest string is: " + array[y]);
             }
         }
-
-
     }
+
+
+}
 
 
 }
