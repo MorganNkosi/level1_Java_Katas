@@ -3,9 +3,14 @@ import java.util.Scanner;
 public class square {
     public static void main(String[] args) {
         System.out.println("Enter unit size");
-
         Scanner input = new Scanner(System.in);
         int number = input.nextInt();
+        square(number);
+
+    }
+    public static void square(int number)
+    {
+
 
         for (int i = 0; i < number; i++)
         {
@@ -15,6 +20,5 @@ public class square {
             }
             System.out.println("");
         }
-
     }
 }
